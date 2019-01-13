@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+
+    <title>EasyInsight</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Basic Styles -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/font-awesome.min.css">
+
+    <!-- easyinsight Styles : Please note (easyinsight-production.css) was created using LESS variables -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/easyinsight-production.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/easyinsight-skins.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/fixedHeader.dataTables.min.css">
+
+    <!-- easyinsight RTL Support is under construction
+         This RTL CSS will be released in version 1.5
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/easyinsight-rtl.min.css"> -->
+
+    <!-- We recommend you use "your_style.css" to override easyinsight
+         specific styles this will also ensure you retrain your customization with each easyinsight update.
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/your_style.css"> -->
+
+    <!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/demo.min.css">
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/custom.css">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/tipsy.css">
+
+    <style>
+        .checkpoint-indicators li{
+            cursor: pointer !important;
+        }
+    </style>
+
+</head>
+<body class="" >
+
+
+<!-- possible classes: minified, fixed-ribbon, fixed-header, fixed-width-->
+
+<!-- HEADER -->
+<header id="header">
+    <div id="logo-group">
+        <div class="navbar">
+            <span class="brand2" style="height:20%; margin-left: 5px">Carousel Table Demo3</span>
+            <!-- PLACE YOUR LOGO HERE -->
+        </div>
+
+        <!-- END AJAX-DROPDOWN -->
+    </div>
+
+</header>
+<!-- END HEADER -->
+
+
+<!-- MAIN PANEL -->
+<div id="main2" role="main">
+
+
+    <!-- widget grid -->
+    <section id="widget-grid" class="">
+
+
+        <div class="row ">
+            <!-- NEW WIDGET START -->
+            <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <!-- Widget ID (each widget will need unique ID)-->
+                <div class="jarviswidget" id="wid-id-002"
+                     data-widget-editbutton="false"
+                     data-widget-colorbutton="false"
+                     data-widget-togglebutton="false"
+                     data-widget-deletebutton="false"
+                     data-widget-fullscreenbutton="false">
+                    <!-- widget options:
+                    usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+
+                    data-widget-colorbutton="false"
+                    data-widget-editbutton="false"
+                    data-widget-togglebutton="false"
+                    data-widget-deletebutton="false"
+                    data-widget-fullscreenbutton="false"
+                    data-widget-custombutton="false"
+                    data-widget-collapsed="true"
+                    data-widget-sortable="false"
+
+                    -->
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                        <h2>Carousel Table in Money Mode - Allow collums to be selected in un-sequential order</h2>
+
+                    </header>
+
+                    <!-- widget div-->
+                    <div>
+
+                        <!-- widget edit box -->
+                        <div class="jarviswidget-editbox">
+                            <!-- This area used as dropdown edit box -->
+
+                        </div>
+                        <!-- end widget edit box -->
+
+                        <!-- widget content -->
+                        <div class="widget-body no-padding">
+
+                            <table id="datatable" class="table table-striped table-bordered table-hover" width="100%">
+                                <thead>
+                                <tr>
+                                    <th colspan="50" class="scrollbar" style="padding: 0px">
+                                        <ol class="checkpoint-indicators">
+                                            <li class="" title="Collumn #1" id="collumnShortCut1" ></li>
+                                            <li class="" title="Collumn #2" id="collumnShortCut2" ></li>
+                                            <li class="" title="Collumn #3" id="collumnShortCut3" ></li>
+                                            <li class="" title="Collumn #4" id="collumnShortCut4" ></li>
+                                            <li class="" title="Collumn #5" id="collumnShortCut5" ></li>
+                                            <li class="" title="Collumn #6" id="collumnShortCut6" ></li>
+                                            <li class="" title="Collumn #7" id="collumnShortCut7" ></li>
+                                            <li class="" title="Collumn #8" id="collumnShortCut8" ></li>
+                                            <li class="" title="Collumn #9" id="collumnShortCut9" ></li>
+                                            <li class="" title="Collumn #10" id="collumnShortCut10" ></li>
+                                            <li class="" title="Collumn #11" id="collumnShortCut11" ></li>
+                                            <li class="" title="Collumn #12" id="collumnShortCut12" ></li>
+                                            <li class="" title="Collumn #13" id="collumnShortCut13" ></li>
+                                            <li class="" title="Collumn #14" id="collumnShortCut14" ></li>
+                                            <li class="" title="Collumn #15" id="collumnShortCut15" ></li>
+                                            <li class="" title="Collumn #16" id="collumnShortCut16" ></li>
+                                            <li class="" title="Collumn #17" id="collumnShortCut17" ></li>
+                                            <li class="" title="Collumn #18" id="collumnShortCut18" ></li>
+                                            <li class="" title="Collumn #19" id="collumnShortCut19" ></li>
+                                            <li class="" title="Collumn #20" id="collumnShortCut20" ></li>
+                                            <li class="" title="Collumn #21" id="collumnShortCut21" ></li>
+                                            <li class="" title="Collumn #22" id="collumnShortCut22" ></li>
+                                            <li class="" title="Collumn #23" id="collumnShortCut23" ></li>
+                                            <li class="" title="Collumn #24" id="collumnShortCut24" ></li>
+                                            <li class="" title="Collumn #25" id="collumnShortCut25" ></li>
+                                            <li class="" title="Collumn #26" id="collumnShortCut26" ></li>
+                                            <li class="" title="Collumn #27" id="collumnShortCut27" ></li>
+                                            <li class="" title="Collumn #28" id="collumnShortCut28" ></li>
+                                            <li class="" title="Collumn #29" id="collumnShortCut29" ></li>
+                                            <li class="" title="Collumn #30" id="collumnShortCut30" ></li>
+                                            <li class="" title="Collumn #31" id="collumnShortCut31" ></li>
+                                            <li class="" title="Collumn #32" id="collumnShortCut32" ></li>
+                                            <li class="" title="Collumn #33" id="collumnShortCut33" ></li>
+                                            <li class="" title="Collumn #34" id="collumnShortCut34" ></li>
+                                            <li class="" title="Collumn #35" id="collumnShortCut35" ></li>
+                                            <li class="" title="Collumn #36" id="collumnShortCut36" ></li>
+                                            <li class="" title="Collumn #37" id="collumnShortCut37" ></li>
+                                            <li class="" title="Collumn #38" id="collumnShortCut38" ></li>
+                                            <li class="" title="Collumn #39" id="collumnShortCut39" ></li>
+                                            <li class="" title="Collumn #40" id="collumnShortCut40" ></li>
+                                            <li class="" title="Collumn #41" id="collumnShortCut41" ></li>
+                                            <li class="" title="Collumn #42" id="collumnShortCut42" ></li>
+                                            <li class="" title="Collumn #43" id="collumnShortCut43" ></li>
+                                            <li class="" title="Collumn #44" id="collumnShortCut44" ></li>
+                                            <li class="" title="Collumn #45" id="collumnShortCut45" ></li>
+                                            <li class="" title="Collumn #46" id="collumnShortCut46" ></li>
+                                            <li class="" title="Collumn #47" id="collumnShortCut47" ></li>
+                                            <li class="" title="Collumn #48" id="collumnShortCut48" ></li>
+                                            <li class="" title="Collumn #49" id="collumnShortCut49" ></li>
+                                            <li class="" title="Collumn #50" id="collumnShortCut50" ></li>
+                                        </ol>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th id="collumn1">Collumn #1</th>
+                                    <th id="collumn2">Collumn #2</th>
+                                    <th id="collumn3">Collumn #3</th>
+                                    <th id="collumn4">Collumn #4</th>
+                                    <th id="collumn5">Collumn #5</th>
+                                    <th id="collumn6">Collumn #6</th>
+                                    <th id="collumn7">Collumn #7</th>
+                                    <th id="collumn8">Collumn #8</th>
+                                    <th id="collumn9">Collumn #9</th>
+                                    <th id="collumn10">Collumn #10</th>
+                                    <th id="collumn11">Collumn #11</th>
+                                    <th id="collumn12">Collumn #12</th>
+                                    <th id="collumn13">Collumn #13</th>
+                                    <th id="collumn14">Collumn #14</th>
+                                    <th id="collumn15">Collumn #15</th>
+                                    <th id="collumn16">Collumn #16</th>
+                                    <th id="collumn17">Collumn #17</th>
+                                    <th id="collumn18">Collumn #18</th>
+                                    <th id="collumn19">Collumn #19</th>
+                                    <th id="collumn20">Collumn #20</th>
+                                    <th id="collumn21">Collumn #21</th>
+                                    <th id="collumn22">Collumn #22</th>
+                                    <th id="collumn23">Collumn #23</th>
+                                    <th id="collumn24">Collumn #24</th>
+                                    <th id="collumn25">Collumn #25</th>
+                                    <th id="collumn26">Collumn #26</th>
+                                    <th id="collumn27">Collumn #27</th>
+                                    <th id="collumn28">Collumn #28</th>
+                                    <th id="collumn29">Collumn #29</th>
+                                    <th id="collumn30">Collumn #30</th>
+                                    <th id="collumn31">Collumn #31</th>
+                                    <th id="collumn32">Collumn #32</th>
+                                    <th id="collumn33">Collumn #33</th>
+                                    <th id="collumn34">Collumn #34</th>
+                                    <th id="collumn35">Collumn #35</th>
+                                    <th id="collumn36">Collumn #36</th>
+                                    <th id="collumn37">Collumn #37</th>
+                                    <th id="collumn38">Collumn #38</th>
+                                    <th id="collumn39">Collumn #39</th>
+                                    <th id="collumn40">Collumn #40</th>
+                                    <th id="collumn41">Collumn #41</th>
+                                    <th id="collumn42">Collumn #42</th>
+                                    <th id="collumn43">Collumn #43</th>
+                                    <th id="collumn44">Collumn #44</th>
+                                    <th id="collumn45">Collumn #45</th>
+                                    <th id="collumn46">Collumn #46</th>
+                                    <th id="collumn47">Collumn #47</th>
+                                    <th id="collumn48">Collumn #48</th>
+                                    <th id="collumn49">Collumn #49</th>
+                                    <th id="collumn50">Collumn #50</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <!-- end widget content -->
+
+                    </div>
+                    <!-- end widget div -->
+
+                </div>
+                <!-- end widget -->
+            </article>
+        </div>
+
+        <!-- end row -->
+
+
+    </section>
+    <!-- end widget grid -->
+
+</div>
+<!-- END MAIN CONTENT -->
+
+</div>
+<!-- END MAIN PANEL -->
+
+
+
+<!--================================================== -->
+
+<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+<script data-pace-options='{ "restartOnRequestAfter": false }' src="../js/plugin/pace/pace.min.js"></script>
+
+<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script>~
+    if (!window.jQuery) {
+        document.write('<script src="../js/libs/jquery-2.0.2.min.js"><\/script>');
+    }
+</script> -->
+<script src="../js/libs/jquery-2.0.2.min.js"></script>
+<script src="../js/libs/jquery-ui-1.10.3.min.js"></script>
+
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script>
+    if (!window.jQuery.ui) {
+        document.write('<script src="../js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+    }
+</script> -->
+
+<!-- IMPORTANT: APP CONFIG -->
+<script src="../js/app.config.js"></script>
+
+<!-- JS TOUCH : include this plugin for mobile drag / drop touch events-->
+<script src="../js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+
+<!-- BOOTSTRAP JS -->
+<script src="../js/bootstrap/bootstrap.min.js"></script>
+
+<!-- CUSTOM NOTIFICATION -->
+<script src="../js/notification/SmartNotification.min.js"></script>
+
+<!-- JARVIS WIDGETS -->
+<script src="../js/smartwidgets/jarvis.widget.min.js"></script>
+
+<!-- EASY PIE CHARTS -->
+<script src="../js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+
+<!-- SPARKLINES -->
+<script src="../js/plugin/sparkline/jquery.sparkline.min.js"></script>
+
+<!-- JQUERY VALIDATE -->
+<script src="../js/plugin/jquery-validate/jquery.validate.min.js"></script>
+
+<!-- JQUERY MASKED INPUT -->
+<script src="../js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+
+<!-- JQUERY SELECT2 INPUT -->
+<script src="../js/plugin/select2/select2.min.js"></script>
+
+<!-- JQUERY UI + Bootstrap Slider -->
+<script src="../js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+<!-- browser msie issue fix -->
+<script src="../js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+
+<!-- FastClick: For mobile devices -->
+<!-- <script src="../js/plugin/fastclick/fastclick.min.js"></script> -->
+
+<!--[if IE 8]>
+
+<h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
+
+<![endif]-->
+
+<!-- Demo purpose only -->
+
+<!-- MAIN APP JS FILE -->
+<script src="../js/app.min.js"></script>
+
+<!-- ENHANCEMENT PLUGINS : NOT A REQUIREMENT -->
+<!-- Voice command : plugin -->
+<script src="../js/speech/voicecommand.min.js"></script>
+
+<script src="../js/plugin/datatables/jquery.dataTables.min.js"></script>
+<script src="../js/plugin/datatables/"></script>
+<script src="../js/plugin/datatables/dataTables.colVis.min.js"></script>
+<script src="../js/plugin/datatables/dataTables.tableTools.min.js"></script>
+<script src="../js/plugin/datatables/dataTables.bootstrap.min.js"></script>
+<script src="../js/plugin/datatable-responsive/datatables.responsive.min.js"></script>
+<!-- PAGE RELATED PLUGIN(S) -->
+
+<!-- Morris Chart Dependencies -->
+<script src="../js/plugin/morris/raphael.min.js"></script>
+<script src="../js/plugin/morris/morris.min.js"></script>
+
+<script src="../js/plugin/datatables/dataTables.fixedHeader.min.js" type="text/javascript"></script>
+
+<script src='../js/tipsy/jquery.tipsy.js' type='text/javascript' ></script>
+<script src='../js/tipsy/jquery.tipsy.js' type='text/javascript' ></script>
+<script src='../js/dataintegrity/dicommon.js' type='text/javascript' ></script>
+<script src='../js/dataintegrity/diviewers2.js' type='text/javascript' ></script>
+
+
+<script type="text/javascript">
+    var _detailFacet;
+    $(document).ready(function() {
+
+        _detailFacet = DIViewer.DetailFacet({
+            targetElement: $('#datatable'),
+            queryURL: '',
+            queryByIdURL: '',
+            exportURL: '',
+            ordering: false,
+            columnDefs:[
+            ],
+            scrollableHeaders:[
+                {index:0, id:'collumn1',indicator:'collumnShortCut1',columns:[0]},
+                {index:1, id:'collumn2',indicator:'collumnShortCut2',columns:[1]},
+                {index:2, id:'collumn3',indicator:'collumnShortCut3',columns:[2]},
+                {index:3, id:'collumn4',indicator:'collumnShortCut4',columns:[3]},
+                {index:4, id:'collumn5',indicator:'collumnShortCut5',columns:[4]},
+                {index:5, id:'collumn6',indicator:'collumnShortCut6',columns:[5]},
+                {index:6, id:'collumn7',indicator:'collumnShortCut7',columns:[6]},
+                {index:7, id:'collumn8',indicator:'collumnShortCut8',columns:[7]},
+                {index:8, id:'collumn9',indicator:'collumnShortCut9',columns:[8]},
+                {index:9, id:'collumn10',indicator:'collumnShortCut10',columns:[9]},
+                {index:10, id:'collumn11',indicator:'collumnShortCut11',columns:[10]},
+                {index:11, id:'collumn12',indicator:'collumnShortCut12',columns:[11]},
+                {index:12, id:'collumn13',indicator:'collumnShortCut13',columns:[12]},
+                {index:13, id:'collumn14',indicator:'collumnShortCut14',columns:[13]},
+                {index:14, id:'collumn15',indicator:'collumnShortCut15',columns:[14]},
+                {index:15, id:'collumn16',indicator:'collumnShortCut16',columns:[15]},
+                {index:16, id:'collumn17',indicator:'collumnShortCut17',columns:[16]},
+                {index:17, id:'collumn18',indicator:'collumnShortCut18',columns:[17]},
+                {index:18, id:'collumn19',indicator:'collumnShortCut19',columns:[18]},
+                {index:19, id:'collumn20',indicator:'collumnShortCut20',columns:[19]},
+                {index:20, id:'collumn21',indicator:'collumnShortCut21',columns:[20]},
+                {index:21, id:'collumn22',indicator:'collumnShortCut22',columns:[21]},
+                {index:22, id:'collumn23',indicator:'collumnShortCut23',columns:[22]},
+                {index:23, id:'collumn24',indicator:'collumnShortCut24',columns:[23]},
+                {index:24, id:'collumn25',indicator:'collumnShortCut25',columns:[24]},
+                {index:25, id:'collumn26',indicator:'collumnShortCut26',columns:[25]},
+                {index:26, id:'collumn27',indicator:'collumnShortCut27',columns:[26]},
+                {index:27, id:'collumn28',indicator:'collumnShortCut28',columns:[27]},
+                {index:28, id:'collumn29',indicator:'collumnShortCut29',columns:[28]},
+                {index:29, id:'collumn30',indicator:'collumnShortCut30',columns:[29]},
+                {index:30, id:'collumn31',indicator:'collumnShortCut31',columns:[30]},
+                {index:31, id:'collumn32',indicator:'collumnShortCut32',columns:[31]},
+                {index:32, id:'collumn33',indicator:'collumnShortCut33',columns:[32]},
+                {index:33, id:'collumn34',indicator:'collumnShortCut34',columns:[33]},
+                {index:34, id:'collumn35',indicator:'collumnShortCut35',columns:[34]},
+                {index:35, id:'collumn36',indicator:'collumnShortCut36',columns:[35]},
+                {index:36, id:'collumn37',indicator:'collumnShortCut37',columns:[36]},
+                {index:37, id:'collumn38',indicator:'collumnShortCut38',columns:[37]},
+                {index:38, id:'collumn39',indicator:'collumnShortCut39',columns:[38]},
+                {index:39, id:'collumn40',indicator:'collumnShortCut40',columns:[39]},
+                {index:40, id:'collumn41',indicator:'collumnShortCut41',columns:[40]},
+                {index:41, id:'collumn42',indicator:'collumnShortCut42',columns:[41]},
+                {index:42, id:'collumn43',indicator:'collumnShortCut43',columns:[42]},
+                {index:43, id:'collumn44',indicator:'collumnShortCut44',columns:[43]},
+                {index:44, id:'collumn45',indicator:'collumnShortCut45',columns:[44]},
+                {index:45, id:'collumn46',indicator:'collumnShortCut46',columns:[45]},
+                {index:46, id:'collumn47',indicator:'collumnShortCut47',columns:[46]},
+                {index:47, id:'collumn48',indicator:'collumnShortCut48',columns:[47]},
+                {index:48, id:'collumn49',indicator:'collumnShortCut49',columns:[48]},
+                {index:49, id:'collumn50',indicator:'collumnShortCut50',columns:[49]}
+            ],
+            visibleHeaderIndexStart:0,
+            visibleHeaderIndexEnd:9,
+            extraConfig:{}
+        });
+
+
+        var dataSet = [
+            [ "Row_01_Collum_1","Row_01_Collum_2","Row_01_Collum_3","Row_01_Collum_4","Row_01_Collum_5","Row_01_Collum_6","Row_01_Collum_7","Row_01_Collum_8","Row_01_Collum_9","Row_01_Collum_10","Row_01_Collum_11","Row_01_Collum_12","Row_01_Collum_13","Row_01_Collum_14","Row_01_Collum_15","Row_01_Collum_16","Row_01_Collum_17","Row_01_Collum_18","Row_01_Collum_19","Row_01_Collum_20","Row_01_Collum_21","Row_01_Collum_22","Row_01_Collum_23","Row_01_Collum_24","Row_01_Collum_25","Row_01_Collum_26","Row_01_Collum_27","Row_01_Collum_28","Row_01_Collum_29","Row_01_Collum_30","Row_01_Collum_31","Row_01_Collum_32","Row_01_Collum_33","Row_01_Collum_34","Row_01_Collum_35","Row_01_Collum_36","Row_01_Collum_37","Row_01_Collum_38","Row_01_Collum_39","Row_01_Collum_40","Row_01_Collum_41","Row_01_Collum_42","Row_01_Collum_43","Row_01_Collum_44","Row_01_Collum_45","Row_01_Collum_46","Row_01_Collum_47","Row_01_Collum_48","Row_01_Collum_49","Row_01_Collum_50"],
+            [ "Row_02_Collum_1","Row_02_Collum_2","Row_02_Collum_3","Row_02_Collum_4","Row_02_Collum_5","Row_02_Collum_6","Row_02_Collum_7","Row_02_Collum_8","Row_02_Collum_9","Row_02_Collum_10","Row_02_Collum_11","Row_02_Collum_12","Row_02_Collum_13","Row_02_Collum_14","Row_02_Collum_15","Row_02_Collum_16","Row_02_Collum_17","Row_02_Collum_18","Row_02_Collum_19","Row_02_Collum_20","Row_02_Collum_21","Row_02_Collum_22","Row_02_Collum_23","Row_02_Collum_24","Row_02_Collum_25","Row_02_Collum_26","Row_02_Collum_27","Row_02_Collum_28","Row_02_Collum_29","Row_02_Collum_30","Row_02_Collum_31","Row_02_Collum_32","Row_02_Collum_33","Row_02_Collum_34","Row_02_Collum_35","Row_02_Collum_36","Row_02_Collum_37","Row_02_Collum_38","Row_02_Collum_39","Row_02_Collum_40","Row_02_Collum_41","Row_02_Collum_42","Row_02_Collum_43","Row_02_Collum_44","Row_02_Collum_45","Row_02_Collum_46","Row_02_Collum_47","Row_02_Collum_48","Row_02_Collum_49","Row_02_Collum_50"],
+            [ "Row_03_Collum_1","Row_03_Collum_2","Row_03_Collum_3","Row_03_Collum_4","Row_03_Collum_5","Row_03_Collum_6","Row_03_Collum_7","Row_03_Collum_8","Row_03_Collum_9","Row_03_Collum_10","Row_03_Collum_11","Row_03_Collum_12","Row_03_Collum_13","Row_03_Collum_14","Row_03_Collum_15","Row_03_Collum_16","Row_03_Collum_17","Row_03_Collum_18","Row_03_Collum_19","Row_03_Collum_20","Row_03_Collum_21","Row_03_Collum_22","Row_03_Collum_23","Row_03_Collum_24","Row_03_Collum_25","Row_03_Collum_26","Row_03_Collum_27","Row_03_Collum_28","Row_03_Collum_29","Row_03_Collum_30","Row_03_Collum_31","Row_03_Collum_32","Row_03_Collum_33","Row_03_Collum_34","Row_03_Collum_35","Row_03_Collum_36","Row_03_Collum_37","Row_03_Collum_38","Row_03_Collum_39","Row_03_Collum_40","Row_03_Collum_41","Row_03_Collum_42","Row_03_Collum_43","Row_03_Collum_44","Row_03_Collum_45","Row_03_Collum_46","Row_03_Collum_47","Row_03_Collum_48","Row_03_Collum_49","Row_03_Collum_50"],
+            [ "Row_04_Collum_1","Row_04_Collum_2","Row_04_Collum_3","Row_04_Collum_4","Row_04_Collum_5","Row_04_Collum_6","Row_04_Collum_7","Row_04_Collum_8","Row_04_Collum_9","Row_04_Collum_10","Row_04_Collum_11","Row_04_Collum_12","Row_04_Collum_13","Row_04_Collum_14","Row_04_Collum_15","Row_04_Collum_16","Row_04_Collum_17","Row_04_Collum_18","Row_04_Collum_19","Row_04_Collum_20","Row_04_Collum_21","Row_04_Collum_22","Row_04_Collum_23","Row_04_Collum_24","Row_04_Collum_25","Row_04_Collum_26","Row_04_Collum_27","Row_04_Collum_28","Row_04_Collum_29","Row_04_Collum_30","Row_04_Collum_31","Row_04_Collum_32","Row_04_Collum_33","Row_04_Collum_34","Row_04_Collum_35","Row_04_Collum_36","Row_04_Collum_37","Row_04_Collum_38","Row_04_Collum_39","Row_04_Collum_40","Row_04_Collum_41","Row_04_Collum_42","Row_04_Collum_43","Row_04_Collum_44","Row_04_Collum_45","Row_04_Collum_46","Row_04_Collum_47","Row_04_Collum_48","Row_04_Collum_49","Row_04_Collum_50"],
+            [ "Row_05_Collum_1","Row_05_Collum_2","Row_05_Collum_3","Row_05_Collum_4","Row_05_Collum_5","Row_05_Collum_6","Row_05_Collum_7","Row_05_Collum_8","Row_05_Collum_9","Row_05_Collum_10","Row_05_Collum_11","Row_05_Collum_12","Row_05_Collum_13","Row_05_Collum_14","Row_05_Collum_15","Row_05_Collum_16","Row_05_Collum_17","Row_05_Collum_18","Row_05_Collum_19","Row_05_Collum_20","Row_05_Collum_21","Row_05_Collum_22","Row_05_Collum_23","Row_05_Collum_24","Row_05_Collum_25","Row_05_Collum_26","Row_05_Collum_27","Row_05_Collum_28","Row_05_Collum_29","Row_05_Collum_30","Row_05_Collum_31","Row_05_Collum_32","Row_05_Collum_33","Row_05_Collum_34","Row_05_Collum_35","Row_05_Collum_36","Row_05_Collum_37","Row_05_Collum_38","Row_05_Collum_39","Row_05_Collum_40","Row_05_Collum_41","Row_05_Collum_42","Row_05_Collum_43","Row_05_Collum_44","Row_05_Collum_45","Row_05_Collum_46","Row_05_Collum_47","Row_05_Collum_48","Row_05_Collum_49","Row_05_Collum_50"],
+            [ "Row_06_Collum_1","Row_06_Collum_2","Row_06_Collum_3","Row_06_Collum_4","Row_06_Collum_5","Row_06_Collum_6","Row_06_Collum_7","Row_06_Collum_8","Row_06_Collum_9","Row_06_Collum_10","Row_06_Collum_11","Row_06_Collum_12","Row_06_Collum_13","Row_06_Collum_14","Row_06_Collum_15","Row_06_Collum_16","Row_06_Collum_17","Row_06_Collum_18","Row_06_Collum_19","Row_06_Collum_20","Row_06_Collum_21","Row_06_Collum_22","Row_06_Collum_23","Row_06_Collum_24","Row_06_Collum_25","Row_06_Collum_26","Row_06_Collum_27","Row_06_Collum_28","Row_06_Collum_29","Row_06_Collum_30","Row_06_Collum_31","Row_06_Collum_32","Row_06_Collum_33","Row_06_Collum_34","Row_06_Collum_35","Row_06_Collum_36","Row_06_Collum_37","Row_06_Collum_38","Row_06_Collum_39","Row_06_Collum_40","Row_06_Collum_41","Row_06_Collum_42","Row_06_Collum_43","Row_06_Collum_44","Row_06_Collum_45","Row_06_Collum_46","Row_06_Collum_47","Row_06_Collum_48","Row_06_Collum_49","Row_06_Collum_50"],
+            [ "Row_07_Collum_1","Row_07_Collum_2","Row_07_Collum_3","Row_07_Collum_4","Row_07_Collum_5","Row_07_Collum_6","Row_07_Collum_7","Row_07_Collum_8","Row_07_Collum_9","Row_07_Collum_10","Row_07_Collum_11","Row_07_Collum_12","Row_07_Collum_13","Row_07_Collum_14","Row_07_Collum_15","Row_07_Collum_16","Row_07_Collum_17","Row_07_Collum_18","Row_07_Collum_19","Row_07_Collum_20","Row_07_Collum_21","Row_07_Collum_22","Row_07_Collum_23","Row_07_Collum_24","Row_07_Collum_25","Row_07_Collum_26","Row_07_Collum_27","Row_07_Collum_28","Row_07_Collum_29","Row_07_Collum_30","Row_07_Collum_31","Row_07_Collum_32","Row_07_Collum_33","Row_07_Collum_34","Row_07_Collum_35","Row_07_Collum_36","Row_07_Collum_37","Row_07_Collum_38","Row_07_Collum_39","Row_07_Collum_40","Row_07_Collum_41","Row_07_Collum_42","Row_07_Collum_43","Row_07_Collum_44","Row_07_Collum_45","Row_07_Collum_46","Row_07_Collum_47","Row_07_Collum_48","Row_07_Collum_49","Row_07_Collum_50"],
+            [ "Row_08_Collum_1","Row_08_Collum_2","Row_08_Collum_3","Row_08_Collum_4","Row_08_Collum_5","Row_08_Collum_6","Row_08_Collum_7","Row_08_Collum_8","Row_08_Collum_9","Row_08_Collum_10","Row_08_Collum_11","Row_08_Collum_12","Row_08_Collum_13","Row_08_Collum_14","Row_08_Collum_15","Row_08_Collum_16","Row_08_Collum_17","Row_08_Collum_18","Row_08_Collum_19","Row_08_Collum_20","Row_08_Collum_21","Row_08_Collum_22","Row_08_Collum_23","Row_08_Collum_24","Row_08_Collum_25","Row_08_Collum_26","Row_08_Collum_27","Row_08_Collum_28","Row_08_Collum_29","Row_08_Collum_30","Row_08_Collum_31","Row_08_Collum_32","Row_08_Collum_33","Row_08_Collum_34","Row_08_Collum_35","Row_08_Collum_36","Row_08_Collum_37","Row_08_Collum_38","Row_08_Collum_39","Row_08_Collum_40","Row_08_Collum_41","Row_08_Collum_42","Row_08_Collum_43","Row_08_Collum_44","Row_08_Collum_45","Row_08_Collum_46","Row_08_Collum_47","Row_08_Collum_48","Row_08_Collum_49","Row_08_Collum_50"],
+            [ "Row_09_Collum_1","Row_09_Collum_2","Row_09_Collum_3","Row_09_Collum_4","Row_09_Collum_5","Row_09_Collum_6","Row_09_Collum_7","Row_09_Collum_8","Row_09_Collum_9","Row_09_Collum_10","Row_09_Collum_11","Row_09_Collum_12","Row_09_Collum_13","Row_09_Collum_14","Row_09_Collum_15","Row_09_Collum_16","Row_09_Collum_17","Row_09_Collum_18","Row_09_Collum_19","Row_09_Collum_20","Row_09_Collum_21","Row_09_Collum_22","Row_09_Collum_23","Row_09_Collum_24","Row_09_Collum_25","Row_09_Collum_26","Row_09_Collum_27","Row_09_Collum_28","Row_09_Collum_29","Row_09_Collum_30","Row_09_Collum_31","Row_09_Collum_32","Row_09_Collum_33","Row_09_Collum_34","Row_09_Collum_35","Row_09_Collum_36","Row_09_Collum_37","Row_09_Collum_38","Row_09_Collum_39","Row_09_Collum_40","Row_09_Collum_41","Row_09_Collum_42","Row_09_Collum_43","Row_09_Collum_44","Row_09_Collum_45","Row_09_Collum_46","Row_09_Collum_47","Row_09_Collum_48","Row_09_Collum_49","Row_09_Collum_50"],
+            [ "Row_10_Collum_1","Row_10_Collum_2","Row_10_Collum_3","Row_10_Collum_4","Row_10_Collum_5","Row_10_Collum_6","Row_10_Collum_7","Row_10_Collum_8","Row_10_Collum_9","Row_10_Collum_10","Row_10_Collum_11","Row_10_Collum_12","Row_10_Collum_13","Row_10_Collum_14","Row_10_Collum_15","Row_10_Collum_16","Row_10_Collum_17","Row_10_Collum_18","Row_10_Collum_19","Row_10_Collum_20","Row_10_Collum_21","Row_10_Collum_22","Row_10_Collum_23","Row_10_Collum_24","Row_10_Collum_25","Row_10_Collum_26","Row_10_Collum_27","Row_10_Collum_28","Row_10_Collum_29","Row_10_Collum_30","Row_10_Collum_31","Row_10_Collum_32","Row_10_Collum_33","Row_10_Collum_34","Row_10_Collum_35","Row_10_Collum_36","Row_10_Collum_37","Row_10_Collum_38","Row_10_Collum_39","Row_10_Collum_40","Row_10_Collum_41","Row_10_Collum_42","Row_10_Collum_43","Row_10_Collum_44","Row_10_Collum_45","Row_10_Collum_46","Row_10_Collum_47","Row_10_Collum_48","Row_10_Collum_49","Row_10_Collum_50"],
+            [ "Row_11_Collum_1","Row_11_Collum_2","Row_11_Collum_3","Row_11_Collum_4","Row_11_Collum_5","Row_11_Collum_6","Row_11_Collum_7","Row_11_Collum_8","Row_11_Collum_9","Row_11_Collum_10","Row_11_Collum_11","Row_11_Collum_12","Row_11_Collum_13","Row_11_Collum_14","Row_11_Collum_15","Row_11_Collum_16","Row_11_Collum_17","Row_11_Collum_18","Row_11_Collum_19","Row_11_Collum_20","Row_11_Collum_21","Row_11_Collum_22","Row_11_Collum_23","Row_11_Collum_24","Row_11_Collum_25","Row_11_Collum_26","Row_11_Collum_27","Row_11_Collum_28","Row_11_Collum_29","Row_11_Collum_30","Row_11_Collum_31","Row_11_Collum_32","Row_11_Collum_33","Row_11_Collum_34","Row_11_Collum_35","Row_11_Collum_36","Row_11_Collum_37","Row_11_Collum_38","Row_11_Collum_39","Row_11_Collum_40","Row_11_Collum_41","Row_11_Collum_42","Row_11_Collum_43","Row_11_Collum_44","Row_11_Collum_45","Row_11_Collum_46","Row_11_Collum_47","Row_11_Collum_48","Row_11_Collum_49","Row_11_Collum_50"],
+            [ "Row_12_Collum_1","Row_12_Collum_2","Row_12_Collum_3","Row_12_Collum_4","Row_12_Collum_5","Row_12_Collum_6","Row_12_Collum_7","Row_12_Collum_8","Row_12_Collum_9","Row_12_Collum_10","Row_12_Collum_11","Row_12_Collum_12","Row_12_Collum_13","Row_12_Collum_14","Row_12_Collum_15","Row_12_Collum_16","Row_12_Collum_17","Row_12_Collum_18","Row_12_Collum_19","Row_12_Collum_20","Row_12_Collum_21","Row_12_Collum_22","Row_12_Collum_23","Row_12_Collum_24","Row_12_Collum_25","Row_12_Collum_26","Row_12_Collum_27","Row_12_Collum_28","Row_12_Collum_29","Row_12_Collum_30","Row_12_Collum_31","Row_12_Collum_32","Row_12_Collum_33","Row_12_Collum_34","Row_12_Collum_35","Row_12_Collum_36","Row_12_Collum_37","Row_12_Collum_38","Row_12_Collum_39","Row_12_Collum_40","Row_12_Collum_41","Row_12_Collum_42","Row_12_Collum_43","Row_12_Collum_44","Row_12_Collum_45","Row_12_Collum_46","Row_12_Collum_47","Row_12_Collum_48","Row_12_Collum_49","Row_12_Collum_50"],
+            [ "Row_13_Collum_1","Row_13_Collum_2","Row_13_Collum_3","Row_13_Collum_4","Row_13_Collum_5","Row_13_Collum_6","Row_13_Collum_7","Row_13_Collum_8","Row_13_Collum_9","Row_13_Collum_10","Row_13_Collum_11","Row_13_Collum_12","Row_13_Collum_13","Row_13_Collum_14","Row_13_Collum_15","Row_13_Collum_16","Row_13_Collum_17","Row_13_Collum_18","Row_13_Collum_19","Row_13_Collum_20","Row_13_Collum_21","Row_13_Collum_22","Row_13_Collum_23","Row_13_Collum_24","Row_13_Collum_25","Row_13_Collum_26","Row_13_Collum_27","Row_13_Collum_28","Row_13_Collum_29","Row_13_Collum_30","Row_13_Collum_31","Row_13_Collum_32","Row_13_Collum_33","Row_13_Collum_34","Row_13_Collum_35","Row_13_Collum_36","Row_13_Collum_37","Row_13_Collum_38","Row_13_Collum_39","Row_13_Collum_40","Row_13_Collum_41","Row_13_Collum_42","Row_13_Collum_43","Row_13_Collum_44","Row_13_Collum_45","Row_13_Collum_46","Row_13_Collum_47","Row_13_Collum_48","Row_13_Collum_49","Row_13_Collum_50"],
+            [ "Row_14_Collum_1","Row_14_Collum_2","Row_14_Collum_3","Row_14_Collum_4","Row_14_Collum_5","Row_14_Collum_6","Row_14_Collum_7","Row_14_Collum_8","Row_14_Collum_9","Row_14_Collum_10","Row_14_Collum_11","Row_14_Collum_12","Row_14_Collum_13","Row_14_Collum_14","Row_14_Collum_15","Row_14_Collum_16","Row_14_Collum_17","Row_14_Collum_18","Row_14_Collum_19","Row_14_Collum_20","Row_14_Collum_21","Row_14_Collum_22","Row_14_Collum_23","Row_14_Collum_24","Row_14_Collum_25","Row_14_Collum_26","Row_14_Collum_27","Row_14_Collum_28","Row_14_Collum_29","Row_14_Collum_30","Row_14_Collum_31","Row_14_Collum_32","Row_14_Collum_33","Row_14_Collum_34","Row_14_Collum_35","Row_14_Collum_36","Row_14_Collum_37","Row_14_Collum_38","Row_14_Collum_39","Row_14_Collum_40","Row_14_Collum_41","Row_14_Collum_42","Row_14_Collum_43","Row_14_Collum_44","Row_14_Collum_45","Row_14_Collum_46","Row_14_Collum_47","Row_14_Collum_48","Row_14_Collum_49","Row_14_Collum_50"],
+            [ "Row_15_Collum_1","Row_15_Collum_2","Row_15_Collum_3","Row_15_Collum_4","Row_15_Collum_5","Row_15_Collum_6","Row_15_Collum_7","Row_15_Collum_8","Row_15_Collum_9","Row_15_Collum_10","Row_15_Collum_11","Row_15_Collum_12","Row_15_Collum_13","Row_15_Collum_14","Row_15_Collum_15","Row_15_Collum_16","Row_15_Collum_17","Row_15_Collum_18","Row_15_Collum_19","Row_15_Collum_20","Row_15_Collum_21","Row_15_Collum_22","Row_15_Collum_23","Row_15_Collum_24","Row_15_Collum_25","Row_15_Collum_26","Row_15_Collum_27","Row_15_Collum_28","Row_15_Collum_29","Row_15_Collum_30","Row_15_Collum_31","Row_15_Collum_32","Row_15_Collum_33","Row_15_Collum_34","Row_15_Collum_35","Row_15_Collum_36","Row_15_Collum_37","Row_15_Collum_38","Row_15_Collum_39","Row_15_Collum_40","Row_15_Collum_41","Row_15_Collum_42","Row_15_Collum_43","Row_15_Collum_44","Row_15_Collum_45","Row_15_Collum_46","Row_15_Collum_47","Row_15_Collum_48","Row_15_Collum_49","Row_15_Collum_50"],
+            [ "Row_16_Collum_1","Row_16_Collum_2","Row_16_Collum_3","Row_16_Collum_4","Row_16_Collum_5","Row_16_Collum_6","Row_16_Collum_7","Row_16_Collum_8","Row_16_Collum_9","Row_16_Collum_10","Row_16_Collum_11","Row_16_Collum_12","Row_16_Collum_13","Row_16_Collum_14","Row_16_Collum_15","Row_16_Collum_16","Row_16_Collum_17","Row_16_Collum_18","Row_16_Collum_19","Row_16_Collum_20","Row_16_Collum_21","Row_16_Collum_22","Row_16_Collum_23","Row_16_Collum_24","Row_16_Collum_25","Row_16_Collum_26","Row_16_Collum_27","Row_16_Collum_28","Row_16_Collum_29","Row_16_Collum_30","Row_16_Collum_31","Row_16_Collum_32","Row_16_Collum_33","Row_16_Collum_34","Row_16_Collum_35","Row_16_Collum_36","Row_16_Collum_37","Row_16_Collum_38","Row_16_Collum_39","Row_16_Collum_40","Row_16_Collum_41","Row_16_Collum_42","Row_16_Collum_43","Row_16_Collum_44","Row_16_Collum_45","Row_16_Collum_46","Row_16_Collum_47","Row_16_Collum_48","Row_16_Collum_49","Row_16_Collum_50"],
+            [ "Row_17_Collum_1","Row_17_Collum_2","Row_17_Collum_3","Row_17_Collum_4","Row_17_Collum_5","Row_17_Collum_6","Row_17_Collum_7","Row_17_Collum_8","Row_17_Collum_9","Row_17_Collum_10","Row_17_Collum_11","Row_17_Collum_12","Row_17_Collum_13","Row_17_Collum_14","Row_17_Collum_15","Row_17_Collum_16","Row_17_Collum_17","Row_17_Collum_18","Row_17_Collum_19","Row_17_Collum_20","Row_17_Collum_21","Row_17_Collum_22","Row_17_Collum_23","Row_17_Collum_24","Row_17_Collum_25","Row_17_Collum_26","Row_17_Collum_27","Row_17_Collum_28","Row_17_Collum_29","Row_17_Collum_30","Row_17_Collum_31","Row_17_Collum_32","Row_17_Collum_33","Row_17_Collum_34","Row_17_Collum_35","Row_17_Collum_36","Row_17_Collum_37","Row_17_Collum_38","Row_17_Collum_39","Row_17_Collum_40","Row_17_Collum_41","Row_17_Collum_42","Row_17_Collum_43","Row_17_Collum_44","Row_17_Collum_45","Row_17_Collum_46","Row_17_Collum_47","Row_17_Collum_48","Row_17_Collum_49","Row_17_Collum_50"],
+            [ "Row_18_Collum_1","Row_18_Collum_2","Row_18_Collum_3","Row_18_Collum_4","Row_18_Collum_5","Row_18_Collum_6","Row_18_Collum_7","Row_18_Collum_8","Row_18_Collum_9","Row_18_Collum_10","Row_18_Collum_11","Row_18_Collum_12","Row_18_Collum_13","Row_18_Collum_14","Row_18_Collum_15","Row_18_Collum_16","Row_18_Collum_17","Row_18_Collum_18","Row_18_Collum_19","Row_18_Collum_20","Row_18_Collum_21","Row_18_Collum_22","Row_18_Collum_23","Row_18_Collum_24","Row_18_Collum_25","Row_18_Collum_26","Row_18_Collum_27","Row_18_Collum_28","Row_18_Collum_29","Row_18_Collum_30","Row_18_Collum_31","Row_18_Collum_32","Row_18_Collum_33","Row_18_Collum_34","Row_18_Collum_35","Row_18_Collum_36","Row_18_Collum_37","Row_18_Collum_38","Row_18_Collum_39","Row_18_Collum_40","Row_18_Collum_41","Row_18_Collum_42","Row_18_Collum_43","Row_18_Collum_44","Row_18_Collum_45","Row_18_Collum_46","Row_18_Collum_47","Row_18_Collum_48","Row_18_Collum_49","Row_18_Collum_50"],
+            [ "Row_19_Collum_1","Row_19_Collum_2","Row_19_Collum_3","Row_19_Collum_4","Row_19_Collum_5","Row_19_Collum_6","Row_19_Collum_7","Row_19_Collum_8","Row_19_Collum_9","Row_19_Collum_10","Row_19_Collum_11","Row_19_Collum_12","Row_19_Collum_13","Row_19_Collum_14","Row_19_Collum_15","Row_19_Collum_16","Row_19_Collum_17","Row_19_Collum_18","Row_19_Collum_19","Row_19_Collum_20","Row_19_Collum_21","Row_19_Collum_22","Row_19_Collum_23","Row_19_Collum_24","Row_19_Collum_25","Row_19_Collum_26","Row_19_Collum_27","Row_19_Collum_28","Row_19_Collum_29","Row_19_Collum_30","Row_19_Collum_31","Row_19_Collum_32","Row_19_Collum_33","Row_19_Collum_34","Row_19_Collum_35","Row_19_Collum_36","Row_19_Collum_37","Row_19_Collum_38","Row_19_Collum_39","Row_19_Collum_40","Row_19_Collum_41","Row_19_Collum_42","Row_19_Collum_43","Row_19_Collum_44","Row_19_Collum_45","Row_19_Collum_46","Row_19_Collum_47","Row_19_Collum_48","Row_19_Collum_49","Row_19_Collum_50"],
+            [ "Row_20_Collum_1","Row_20_Collum_2","Row_20_Collum_3","Row_20_Collum_4","Row_20_Collum_5","Row_20_Collum_6","Row_20_Collum_7","Row_20_Collum_8","Row_20_Collum_9","Row_20_Collum_10","Row_20_Collum_11","Row_20_Collum_12","Row_20_Collum_13","Row_20_Collum_14","Row_20_Collum_15","Row_20_Collum_16","Row_20_Collum_17","Row_20_Collum_18","Row_20_Collum_19","Row_20_Collum_20","Row_20_Collum_21","Row_20_Collum_22","Row_20_Collum_23","Row_20_Collum_24","Row_20_Collum_25","Row_20_Collum_26","Row_20_Collum_27","Row_20_Collum_28","Row_20_Collum_29","Row_20_Collum_30","Row_20_Collum_31","Row_20_Collum_32","Row_20_Collum_33","Row_20_Collum_34","Row_20_Collum_35","Row_20_Collum_36","Row_20_Collum_37","Row_20_Collum_38","Row_20_Collum_39","Row_20_Collum_40","Row_20_Collum_41","Row_20_Collum_42","Row_20_Collum_43","Row_20_Collum_44","Row_20_Collum_45","Row_20_Collum_46","Row_20_Collum_47","Row_20_Collum_48","Row_20_Collum_49","Row_20_Collum_50"]
+        ];
+
+
+        _detailFacet.renderDataTable(dataSet);
+
+        initTooltip();
+
+        $(document.body).css({
+            "overflow-x":"hidden"
+        });
+    });
+
+    //setup_flots();
+    /* end flot charts */
+
+</script>
+
+
+</body>
+
+</html>
